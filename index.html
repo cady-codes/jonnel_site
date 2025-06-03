@@ -15,12 +15,13 @@
 
     header {
       text-align: center;
-      padding: 60px 40px;
+      padding: 60px 40px 0 40px;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 48px;
+      margin-bottom: 10px;
     }
 
     header p {
@@ -40,9 +41,17 @@
     }
 
     .portfolio-section {
-      padding: 40px 20px;
+      padding: 10px 20px 40px 20px;
       max-width: 1200px;
       margin: auto;
+    }
+
+    .portfolio-item {
+        transition: transform 0.2s ease;
+    }
+
+    .portfolio-item:hover {
+        transform: scale(1.05);
     }
 
     .portfolio-section h2 {
@@ -63,6 +72,11 @@
       border-radius: 8px;
     }
 
+    .portfolio-item a {
+        color: white;
+        text-decoration: none;
+    }
+
     .portfolio-item img {
       width: 100%;
       border-radius: 4px;
@@ -72,6 +86,27 @@
       margin-top: 10px;
       font-size: 14px;
     }
+
+    .view-count{
+        margin: 0;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: #adadad;
+    }
+
+    .view-count p {
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .view-count .counting {
+        font-size: 31px;
+        margin-bottom: 37px;
+    }
+
 
     .info-columns {
       display: flex;
@@ -119,43 +154,70 @@
       border-radius: 4px;
       cursor: pointer;
     }
+
+    .contact {
+        margin-bottom: 150px;
+    }
+
+    .contact h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="jonnel profile pic.jpg" alt="Caden Padua profile pic" style="border-radius: 50%;" height="150px"/>
     <h1>Jonnel Kebab</h1>
-    <p>Freelance Video Editor | Long-form video Specialist</p>
+    <p>Freelance Video Editor | Long-form Video Specialist</p>
   </header>
 
   <section class="portfolio-section">
     <h2>Video Portfolio</h2>
     <div class="portfolio">
       <div class="portfolio-item">
-        <img src="jonnel thumb.jpg" alt="Travel Vlog" />
-        <p>Travel Vlog</p>
+        <a href="https://youtu.be/SMwAfHCzxtM?si=V1CTO00xWlDTWUnm" target="_blank">
+            <img src="jonnel thumb.jpg" alt="Travel Vlog" />
+            <p><b>30 DAYS of Portraits Changed My Art FOREVER</b></p>
+        </a>
       </div>
       <div class="portfolio-item">
-        <img src="lee thumb.jpg" alt="Marketing Tips" />
-        <p>Marketing Tips</p>
+        <a href="https://youtu.be/TUYnsoz1_FQ?si=KePw1nqKv6zz61an" target="_blank">
+            <img src="lee thumb.jpg" alt="Marketing Tips" />
+            <p><b>I competed against PRO bodybuilders naturally (SHOW DAY VLOG)</b></p>
+        </a>
       </div>
       <div class="portfolio-item">
-        <img src="luka thumb.jpg" alt="Fitness Promo" />
-        <p>Fitness Promo</p>
+        <a href="https://youtu.be/6qnZsFykUzE?si=QPyLSCiUrVasgb9B" target="_blank">
+            <img src="luka thumb.jpg" alt="Fitness Promo" />
+            <p><b>hanging out with a tiktok shop goat</b></p>
+        </a>
       </div>
       <div class="portfolio-item">
-        <img src="lee 2.jpg" alt="Gaming Highlights" />
-        <p>Gaming Highlights</p>
+        <a href="https://youtu.be/HQ9wrKJEwFE?si=K_HlfxggVfFpMd6w" target="_blank">
+            <img src="lee 2.jpg" alt="Gaming Highlights" />
+            <p><b>What's the best Costco food for a cheat meal?</b></p>
+        </a>
       </div>
       <div class="portfolio-item">
-        <img src="lee 3.jpg" alt="Self-Improvement" />
-        <p>Self-Improvement</p>
+        <a href="https://youtu.be/7b8sCIYycw0?si=cEwGnv1Ir-7dHq9z" target="_blank">
+            <img src="lee 3.jpg" alt="Self-Improvement" />
+            <p><b>A day of living on 1400 calories (FULL DAY OF EATING)</b></p>
+        </a>
       </div>
       <div class="portfolio-item">
-        <img src="lee 4.jpg" alt="UGC Compilation" />
-        <p>UGC Compilation</p>
+        <a href="https://youtu.be/tEgwMDrPw60?si=c5ltmQXs7xxRzZw3" target="_blank">
+            <img src="lee 4.jpg" alt="UGC Compilation" />
+            <p><b>What's the best Krispy Kreme doughnut for a cheat meal?</b></p>
+        </a>
       </div>
     </div>
+  </section>
+
+  <section class="view-count">
+    <p class="views"><i><span style="color: white;"><b>1,479,265+ views</b></span></i></p>
+    <p class="counting"><i> and counting :)</i></p>
   </section>
 
   <section class="section info-columns">
