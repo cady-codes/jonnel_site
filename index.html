@@ -165,6 +165,21 @@
         justify-content: center;
         align-items: center;
     }
+
+    @media (max-width: 768px) {
+        .portfolio {
+            grid-template-columns: 1fr; /* Stack videos vertically */
+            gap: 40px;
+        }
+
+        .portfolio-item {
+            padding: 8px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+        }
+    }
   </style>
 </head>
 <body>
